@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DoubleActivity</string>
+    <string name="new_passworld">New Passworld</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="confirm_passworld">Confirm Passworld</string>
+    <string name="submit">SUBMIT</string>
+    <string name="toast">toast</string>
+    <string name="welcome">WELCOME</string>
+    <string name="enter_password">Enter password</string>
+</resources>

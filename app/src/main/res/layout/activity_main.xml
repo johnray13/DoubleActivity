@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="25dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/baseline_account_circle_24" />
+
+    <TextView
+        android:id="@+id/reset_Pswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:text="@string/reset_password"
+        android:textColor="@color/black"
+        android:layout_marginBottom="30dp"
+
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/New_Pswd"
+        android:drawablePadding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_passworld"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+
+        app:drawableStartCompat="@drawable/baseline_verified_user_24" />
+
+    <EditText
+        android:id="@+id/passwordEditText1"
+        android:drawableEnd="@drawable/baseline_visibility_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+
+        />
+    <TextView
+        android:drawablePadding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_passworld"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginStart="20dp"
+        app:drawableStartCompat="@drawable/baseline_verified_user_24"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/passwordEditText2"
+        android:drawableEnd="@drawable/baseline_visibility_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:hint="@string/confirm_passworld"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:text="@string/submit" />
+
+
+
+
+</LinearLayout>
