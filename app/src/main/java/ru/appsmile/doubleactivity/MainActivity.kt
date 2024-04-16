@@ -25,11 +25,11 @@ class MainActivity : AppCompatActivity() {
             val password1 = passwordEditText1.text.toString()
             val password2 = passwordEditText2.text.toString()
 
-            if (password1 == password2) {
+            if (password1 == password2 && password1.length >= 8) {
                 val intent = Intent(this, SecondActivity::class.java)
                 startActivity(intent)
             } else {
-                    Toast.makeText(this, "Пароль не правильный или короткий", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Пароль не правильный или слишком короткий", Toast.LENGTH_SHORT).show()
             }
         }
     }
